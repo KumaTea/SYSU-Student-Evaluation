@@ -6,7 +6,11 @@
 2. 打开 [AutoEval.js](./AutoEval.js)，全选，复制
 * [方便Ctrl+A的版本](https://raw.githubusercontent.com/oudoubleyang/SYSU-Student-Evaluation/master/AutoEval.js)
 3. 按F12，切换到控制台 (Console)，粘贴，回车
+* 如果没有控制台，请切换到Chromium内核浏览器
 4. 等待自动评教完成，剩下的均为无法评价项目
 
 ## 鸣谢
-[双鸭山电报频道](https://t.me/cshs_edu_pill)的[这个脚本](https://t.me/cshs_edu_pill/273)
+**[双鸭山电报频道](https://t.me/cshs_edu_pill)的[这个脚本](https://t.me/cshs_edu_pill/273)**
+
+## 免责声明
+* 本脚本虽然经过测试，但无法保证适用所有情况，且作者不承担因程序出错产生的任何后果。
