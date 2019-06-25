@@ -13,6 +13,8 @@
 * 一定要使用Chromium内核浏览器
 * 如果运行出错，请更新浏览器
 * 好评率可以调```goodrate```参数，但是……尽量全五星吧（
+* 如果你不知道什么是Console，请点击下图查看
+<img src="https://github.com/oudoubleyang/Hosting/raw/master/SYSU-Student-Evaluation/console.png" width="300">
 
 ## 鸣谢
 **[双鸭山电报频道](https://t.me/cshs_edu_pill)的[这个脚本](https://t.me/cshs_edu_pill/273)**
