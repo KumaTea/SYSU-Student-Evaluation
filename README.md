@@ -1,6 +1,14 @@
 # SYSU-Student-Evaluation
 中山大学教务系统学生自动评教脚本
 
+## 更新
+
+* 2019秋季学期新版教务评教系统，出现了区分大小写的验证码，出现概率为首次100%及随后约20%。
+* 本次更新加入了检测验证码的机制。
+  * Console出现红字POST无需惊慌
+* 鸣谢：[双鸭山电报小组](https://t.me/sbddy2019)给予我的启发和帮助
+---
+
 ## 如何使用
 1. [登录教务系统](https://uems.sysu.edu.cn/jwxt)后，打开[评教页面](https://uems.sysu.edu.cn/jwxt/mk/evaluation/#/evaluation)
 2. 打开 [AutoEval.js](./AutoEval.js)，全选，复制
