@@ -1,8 +1,9 @@
 var times;  // 获取新项目频次
-var delay = 2000  // 延迟2秒，过短易出错
+var delay = 2000;  // 延迟2秒，过短易出错
 var repeat;  // 总评教次数
-var item = 0; // Evaluation block index
+var item = 0;  // Evaluation block index
 var goodrate = 1;  // 评优率，默认100%，请设置于[0,1]区间
+var finish;  // Finishing alert
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -15,7 +16,7 @@ async function autoEval() {
 			await sleep(delay);
 
 			if (document.querySelector('[class=alls-con] .stu-eva-con').querySelectorAll('.sys-card')[item]) 
-				// Select a evaluation block
+			// Select an evaluation block
 
 				{document.querySelector('[class=alls-con] .stu-eva-con').querySelectorAll('.sys-card')[item].querySelector('button').click();} 
 				// Click the start button
@@ -27,7 +28,7 @@ async function autoEval() {
 			await sleep(delay);
 
 			Array.from(document.querySelectorAll('[aria-labelledby=rcDialogTitle0] .ant-radio-group')).map(a=>a.querySelectorAll(Math.random() < goodrate ? 'input[value="0.95"]' : 'input[value="0.75"]')).map(l => l[0]).map(c => c.click());
-			// Click all option by good evaluating rate
+			// Click all option refer to good evaluating rate
 
 			await sleep(delay);
 
@@ -84,7 +85,9 @@ async function autoEval() {
 		// Click get more
 	};
 
-	alert('评教完成。\n共' + item + '次无法评价。');
+	if (item > 0) {finish = "评教完成。\n共" + item + "次无法评价。"} else {finish = "评教已顺利完成。"};
+
+	alert(finish);
 };
 
 autoEval();

@@ -10,10 +10,10 @@
 ---
 
 ## 如何使用
-1. [登录教务系统](https://uems.sysu.edu.cn/jwxt)后，打开[评教页面](https://uems.sysu.edu.cn/jwxt/mk/evaluation/#/evaluation)
+1. [登录教务系统](https://jwxt.sysu.edu.cn/)后，打开[评教页面](https://jwxt.sysu.edu.cn/jwxt/mk/evaluation/#/evaluation)
 2. 打开 [AutoEval.js](./AutoEval.js)，全选，复制
-* [方便Ctrl+A的版本](https://raw.githubusercontent.com/oudoubleyang/SYSU-Student-Evaluation/master/AutoEval.js)
-3. 切换到[评教页面](https://uems.sysu.edu.cn/jwxt/mk/evaluation/#/evaluation)，按F12打开控制台 (Console)，粘贴代码，回车
+* [方便Ctrl+A的版本](https://raw.githubusercontent.com/oudoubleyang/SYSU-Student-Evaluation/master/AutoEval.min.js)
+3. 切换到[评教页面](https://jwxt.sysu.edu.cn/jwxt/mk/evaluation/#/evaluation)，按F12打开控制台 (Console)，粘贴代码，回车
 * 如果没有控制台，请切换到Chromium内核浏览器
 4. 等待自动评教完成。若有无法评价的项目，将会提示。
 
