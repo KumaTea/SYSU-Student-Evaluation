@@ -1,3 +1,24 @@
+// ==UserScript==
+// @name               中大自动评教
+// @name:en            SYSU Auto Evaluation
+// @name:zh            中大自动评教
+// @name:zh-CN         中大自动评教
+// @namespace          https://github.com/KumaTea
+// @namespace          https://greasyfork.org/en/users/169784-kumatea
+// @version            0.2.1.0
+// @description        中山大学教务系统学生自动评教脚本
+// @description:en     Automatic Script for Student Evaluation from Academic Affairs System of Sun Yat-sen University
+// @description:zh     中山大学教务系统学生自动评教脚本
+// @description:zh-cn  中山大学教务系统学生自动评教脚本
+// @author             KumaTea
+// @match              https://jwxt.sysu.edu.cn/jwxt/mk/evaluation/
+// @require            https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js
+// @license            MIT
+// ==/UserScript==
+
+/* jshint esversion: 8 */
+
+
 let item = 0; // Evaluation block index
 let delay = 2000; // 延迟2秒，过短易出错
 let times; // 获取新项目频次
@@ -74,7 +95,7 @@ async function autoEval() {
       while (captcha) {
         if (block_img.length > 0) {
           if (block_img[block_img.length - 1].alt === "验证码") {
-            alert("请手动输入验证码，然后稍作等待。");
+            sweetAlert("请手动输入验证码，然后稍作等待。", {buttons: false, timer: 3000,});
           } else {
             captcha = false;
             break;
@@ -84,7 +105,7 @@ async function autoEval() {
           break;
         }
 
-        await sleep(delay * 10);
+        await sleep(delay * 5);
 
         try {
           document.querySelector('.ant-modal-footer').querySelector('.ant-btn-primary').click();
@@ -122,4 +143,4 @@ async function autoEval() {
 }
 
 
-autoEval().then(r => {alert(finish);});
+autoEval().then(r => {sweetAlert(finish);});
